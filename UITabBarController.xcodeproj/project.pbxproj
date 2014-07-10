@@ -19,6 +19,11 @@
 		BFD8934D196E8B8200F6EC4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD89335196E8B8200F6EC4D /* UIKit.framework */; };
 		BFD89355196E8B8200F6EC4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFD89353196E8B8200F6EC4D /* InfoPlist.strings */; };
 		BFD89357196E8B8200F6EC4D /* UITabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD89356196E8B8200F6EC4D /* UITabBarControllerTests.m */; };
+		BFD89362196E8BCD00F6EC4D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD89361196E8BCD00F6EC4D /* FirstViewController.m */; };
+		BFD89365196E8BD200F6EC4D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD89364196E8BD200F6EC4D /* SecondViewController.m */; };
+		BFD89368196E8BD800F6EC4D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD89367196E8BD800F6EC4D /* ThirdViewController.m */; };
+		BFD8936B196E8BE600F6EC4D /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD8936A196E8BE600F6EC4D /* FourViewController.m */; };
+		BFD8936E196E8BF000F6EC4D /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD8936D196E8BF000F6EC4D /* FiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,16 @@
 		BFD89352196E8B8200F6EC4D /* UITabBarControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITabBarControllerTests-Info.plist"; sourceTree = "<group>"; };
 		BFD89354196E8B8200F6EC4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFD89356196E8B8200F6EC4D /* UITabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITabBarControllerTests.m; sourceTree = "<group>"; };
+		BFD89360196E8BCD00F6EC4D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BFD89361196E8BCD00F6EC4D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BFD89363196E8BD200F6EC4D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BFD89364196E8BD200F6EC4D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BFD89366196E8BD800F6EC4D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BFD89367196E8BD800F6EC4D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BFD89369196E8BE600F6EC4D /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		BFD8936A196E8BE600F6EC4D /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		BFD8936C196E8BF000F6EC4D /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		BFD8936D196E8BF000F6EC4D /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +126,16 @@
 				BFD89341196E8B8200F6EC4D /* AppDelegate.m */,
 				BFD89343196E8B8200F6EC4D /* Images.xcassets */,
 				BFD89338196E8B8200F6EC4D /* Supporting Files */,
+				BFD89360196E8BCD00F6EC4D /* FirstViewController.h */,
+				BFD89361196E8BCD00F6EC4D /* FirstViewController.m */,
+				BFD89363196E8BD200F6EC4D /* SecondViewController.h */,
+				BFD89364196E8BD200F6EC4D /* SecondViewController.m */,
+				BFD89366196E8BD800F6EC4D /* ThirdViewController.h */,
+				BFD89367196E8BD800F6EC4D /* ThirdViewController.m */,
+				BFD89369196E8BE600F6EC4D /* FourViewController.h */,
+				BFD8936A196E8BE600F6EC4D /* FourViewController.m */,
+				BFD8936C196E8BF000F6EC4D /* FiveViewController.h */,
+				BFD8936D196E8BF000F6EC4D /* FiveViewController.m */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
@@ -239,8 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD8936B196E8BE600F6EC4D /* FourViewController.m in Sources */,
+				BFD89365196E8BD200F6EC4D /* SecondViewController.m in Sources */,
+				BFD89368196E8BD800F6EC4D /* ThirdViewController.m in Sources */,
 				BFD89342196E8B8200F6EC4D /* AppDelegate.m in Sources */,
+				BFD89362196E8BCD00F6EC4D /* FirstViewController.m in Sources */,
 				BFD8933E196E8B8200F6EC4D /* main.m in Sources */,
+				BFD8936E196E8BF000F6EC4D /* FiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

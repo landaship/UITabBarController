@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourViewController.h"
+#import "FiveViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +20,23 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    // 1. 添加那5个viewcontroller
+    FirstViewController *firtVC = [[FirstViewController alloc]init];
+    
+    SecondViewController *secondVC = [[SecondViewController alloc]init];
+    
+    ThirdViewController *thirdVC = [[ThirdViewController alloc]init];
+    
+    FourViewController *fourVC = [[FourViewController alloc]init];
+    
+    FiveViewController *fiveVC = [[FiveViewController alloc]init];
+    
+    // 2.   添加tabBarController
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:firtVC, secondVC, thirdVC, fourVC, fiveVC, nil];
+    self.window.rootViewController =  tabBarController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

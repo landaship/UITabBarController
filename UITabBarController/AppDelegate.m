@@ -23,20 +23,47 @@
     
     // 1. 添加那5个viewcontroller
     FirstViewController *firtVC = [[FirstViewController alloc]init];
-    
     SecondViewController *secondVC = [[SecondViewController alloc]init];
-    
     ThirdViewController *thirdVC = [[ThirdViewController alloc]init];
-    
     FourViewController *fourVC = [[FourViewController alloc]init];
-    
     FiveViewController *fiveVC = [[FiveViewController alloc]init];
     
     // 2.   添加tabBarController
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     tabBarController.viewControllers = [NSArray arrayWithObjects:firtVC, secondVC, thirdVC, fourVC, fiveVC, nil];
-    self.window.rootViewController =  tabBarController;
     
+    // 3.1. 设置背景图片
+    [tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar_background.png"]];
+    
+    // 3.2. 设置每个Item的图片
+    [firtVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_home.png"]];
+    [secondVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_message_center.png"]];
+    [thirdVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_profile_selected.png"]];
+    [fourVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_discover.png"]];
+//    [fiveVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_more.png"]];
+    fiveVC.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemMore tag:4];
+    
+    // 3.3 设置每个Item文字
+    firtVC.title = @"首页";
+    secondVC.title = @"消息";
+    thirdVC.title = @"我";
+    fourVC.title = @"广场";
+    fiveVC.title = @"更多";
+    
+    // 3.4. 设置数量图标
+    firtVC.tabBarItem.badgeValue = @"10";
+    secondVC.tabBarItem.badgeValue = @"11230";
+    thirdVC.tabBarItem.badgeValue = @"1543430";
+    
+    // 3.5 设置选中时图标的颜色变化, 貌似这两个效果没有多大区别
+    tabBarController.tabBar.tintColor = [UIColor greenColor];
+    tabBarController.tabBar. selectedImageTintColor = [UIColor colorWithRed:231/255.0 green:141/255.0 blue:41/255.0 alpha:1.0];
+    
+    // 3.6 设置默认选中的item
+    tabBarController.selectedIndex = 3;
+    
+    // 4. 添加根控制器
+    self.window.rootViewController =  tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

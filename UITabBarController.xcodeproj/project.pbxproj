@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9F5082196EE215004F2AD5 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F5081196EE215004F2AD5 /* SixViewController.m */; };
 		BFD89332196E8B8200F6EC4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD89331196E8B8200F6EC4D /* Foundation.framework */; };
 		BFD89334196E8B8200F6EC4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD89333196E8B8200F6EC4D /* CoreGraphics.framework */; };
 		BFD89336196E8B8200F6EC4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD89335196E8B8200F6EC4D /* UIKit.framework */; };
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF9F5080196EE215004F2AD5 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
+		BF9F5081196EE215004F2AD5 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
 		BFD8932E196E8B8200F6EC4D /* UITabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD89331196E8B8200F6EC4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFD89333196E8B8200F6EC4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +192,8 @@
 				BFD8936A196E8BE600F6EC4D /* FourViewController.m */,
 				BFD8936C196E8BF000F6EC4D /* FiveViewController.h */,
 				BFD8936D196E8BF000F6EC4D /* FiveViewController.m */,
+				BF9F5080196EE215004F2AD5 /* SixViewController.h */,
+				BF9F5081196EE215004F2AD5 /* SixViewController.m */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD8936B196E8BE600F6EC4D /* FourViewController.m in Sources */,
+				BF9F5082196EE215004F2AD5 /* SixViewController.m in Sources */,
 				BFD89365196E8BD200F6EC4D /* SecondViewController.m in Sources */,
 				BFD89368196E8BD800F6EC4D /* ThirdViewController.m in Sources */,
 				BFD89342196E8B8200F6EC4D /* AppDelegate.m in Sources */,
@@ -579,6 +585,7 @@
 				BFD8935C196E8B8200F6EC4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFD8935D196E8B8200F6EC4D /* Build configuration list for PBXNativeTarget "UITabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +594,7 @@
 				BFD8935F196E8B8200F6EC4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
